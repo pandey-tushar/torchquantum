@@ -69,7 +69,9 @@ __all__ = [
     "SDG",
     "SXDG",
     "TDG",
-    "ISWAP"
+    "ISWAP",
+    "CH",
+    "CHadamard",
 ]
 
 
