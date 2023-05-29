@@ -595,7 +595,6 @@ class CHadamard(Operation, metaclass=ABCMeta):
     @classmethod
     def _matrix(cls, params):
         return cls.matrix
-
    
 class SDG(Observable, metaclass=ABCMeta):
     """Class for S Dagger Gate."""
@@ -634,9 +633,6 @@ class SXDG(Observable, metaclass=ABCMeta):
     def _eigvals(cls, params):
         return cls.eigvals
 
-
-    
-    
 class TDG(Observable, metaclass=ABCMeta):
     """Class for T Dagger Gate."""
 
@@ -1486,5 +1482,6 @@ op_name_dict = {
     "sxdg": SXDG,
     "tdg": TDG,
     "iswap":ISWAP,
-    
+    "chadamard": CHadamard,
+    "ch": CHadamard,
 }
