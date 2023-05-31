@@ -132,7 +132,7 @@ class Operator(tq.QuantumModule):
         "SXDG",
         "TDG",
         "ISWAP",
-        "CHadamard"
+        "CHadamard",
     ]
 
     parameterized_ops = [
@@ -590,7 +590,7 @@ class CHadamard(Operation, metaclass=ABCMeta):
     """Class for CHadamard Gate."""
 
     num_params = 0
-    num_wires = 1
+    num_wires = 2
     matrix = mat_dict["chadamard"]
     func = staticmethod(tqf.chadamard)
 
